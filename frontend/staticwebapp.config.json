@@ -16,7 +16,7 @@
                 "registration": {
                     "openIdIssuer": "https://login.microsoftonline.com/ae2a48b0-5025-45ed-ac0c-02b6d5694824/v2.0",
                     "clientIdSettingName": "AAD_CLIENT_ID",
-                    "clientSecretSettingName": "AAD_CLIENT_SECRET"
+                    "clientSecretCertificateKeyVaultReference": "@Microsoft.KeyVault(SecretUri=https://danluiskeyvault.vault.azure.net/certificates/static-webapp/)"
                 }
             }
         }
