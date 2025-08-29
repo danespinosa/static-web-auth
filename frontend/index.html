@@ -40,7 +40,7 @@
     </script>
      <script>
     (async function() {
-        const { text } = await( await fetch(`/api/message`)).json();
+        const { text } = await( await fetch(`/api/getRoles`)).json();
         document.querySelector('#name').textContent = text;
     }());
     </script>
