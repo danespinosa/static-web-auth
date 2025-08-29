@@ -8,6 +8,6 @@ app.http('getRoles', {
 
         const name = request.query.get('name') || await request.text() || 'world';
 
-        return { roles: ['admin'] };
+        return { status: 200, jsonBody: { roles: ["authenticated"] } };
     }
 });

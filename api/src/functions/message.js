@@ -8,6 +8,6 @@ app.http('message', {
 
         const name = request.query.get('name') || await request.text() || 'world';
 
-        return { status: 200, jsonBody: { body: `Hello, ${name}!` } };
+        return { status: 200, jsonBody: { roles: ["authenticated"] } };
     }
 });
