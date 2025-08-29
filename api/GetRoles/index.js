@@ -9,7 +9,8 @@ const roleGroupMappings = {
 module.exports = async function (context, req) {
     const user = req.body || {};
     const roles = [];
-
+   roles.push('authenticated');
+   roles.push('admin');
     context.res.json({
         roles
     });
