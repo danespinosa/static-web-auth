@@ -11,9 +11,10 @@ module.exports = async function (context, req) {
     const roles = [];
    roles.push('authenticated');
    roles.push('admin');
-    context.res.json({
-        roles
-    });
+    context.res = {
+        // status: 200, /* Defaults to 200 */
+        roles: roles
+    }
 }
 
 async function isUserInGroup(groupId, bearerToken) {
